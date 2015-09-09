@@ -1,5 +1,8 @@
 /* Import node's http module: */
 var http = require("http");
+//require request-handler.js
+//this variable becomes the request-handler module
+var handleRequest = require('./request-handler.js');
 
 
 // Every server needs to listen on a port with a unique number. The
@@ -30,7 +33,7 @@ server.listen(port, ip);
 //
 //   node basic-server.js
 //
-// on the command line.
+// on the command line. 
 //
 // To connect to the server, load http://127.0.0.1:3000 in your web
 // browser.
